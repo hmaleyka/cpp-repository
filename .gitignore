@@ -1,32 +1,17 @@
-# Prerequisites
-*.d
+#include<iostream>
+using namespace std;
+int main()
+{
+int a[]{2,3,4,87,13,16};
+int size{sizeof(a) / sizeof(int)}, i{0};
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+while(i<size)
+{
+if(a[i]%2 !=0)
+ cout<<a[i]<<" ';
+ i++;
+}
+cout<<endl;
+return 0;
+}
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
